@@ -1,0 +1,68 @@
+body{
+/*      background-image: linear-gradient(to right, #ededed, lightgreen);
+   */
+  background-image: linear-gradient(to right, #F7B733, #FC4A1A);
+}
+
+h1{
+  display: flex;
+  margin-right:auto; 
+  margin-left:auto; 
+}
+.Head{
+   display: flex;
+   justify-content: space-between;
+   font-size: 35px;
+   font-family: 'Montserrat', sans-serif;
+  color: white;
+  
+
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+
+    position: relative;
+    display: inline-block;
+    width: 10vw;
+    padding-left: 25px;
+    font-size: 25px;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 165px;
+    box-shadow: 0px 8px 16px 0px rgb(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+     
+  }
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #d0dbe6}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+header{
+  display: flex; 
+  justify-content:flex-end; 
+  margin-right: 20px; 
+  
+}
+
+.cr{
+  display:flex;
+  justify-content: center;
+}

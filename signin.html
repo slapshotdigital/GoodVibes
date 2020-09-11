@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sign in</title>
+<link rel="stylesheet" href="signin.css"> 
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+  <div class="dropdown">
+      <button class="dropbtn"> Menu </button>
+      <div class="dropdown-content">
+        <a href="index.html">Home Page</a>
+        <a href="signin.html">Sign In</a>
+      </div>
+    </div>
+  </header>
+  <div class="Head">
+    <p style="visibility: hidden">
+      Hello
+    </p>
+    <h1>
+      Good Vibes 
+    </h1>
+    
+    
+  </div>
+
+  <div id="firebaseui-auth-container"></div>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+ <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+  <script src="https://cdn.firebase.com/libs/firebaseui/4.1.0/firebaseui.js"></script>
+  
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/4.1.0/firebaseui.css" />
+  
+  <script src="signin.js"></script>
+  <footer>
+  <div>
+<p class="cr">
+  Copyright © 2019 Good Vibes All Right Reserved.
+    </p>  
+    </div>
+  </footer>
+</body>
+
+</html>

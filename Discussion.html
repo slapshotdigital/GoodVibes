@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Add a Discussion</title>
+</head>
+<body>
+    
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAqTZ4VQlKXRpM-8zEV1fQKkA1CSFXFYwg",
+    authDomain: "good-vibes-tja.firebaseapp.com",
+    databaseURL: "https://good-vibes-tja.firebaseio.com",
+    projectId: "good-vibes-tja",
+    storageBucket: "good-vibes-tja.appspot.com",
+    messagingSenderId: "551003240739",
+    appId: "1:551003240739:web:41bb095d874fd31b013496",
+    measurementId: "G-616DHWDGNB"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+<h1>Add a Discussion</h1>
+<form method=post action="do_addtopic.php">
+<p><strong>Your Username:</strong><br>
+<input type="text" name="topic_owner" size=40 maxlength=150>
+<p><strong>Discussion Title:</strong><br>
+<input type="text" name="topic_title" size=40 maxlength=150>
+<P><strong>Post Text:</strong><br>
+<textarea name="post_text" rows=8 cols=40 wrap=virtual></textarea>
+<P><input type="submit" name="submit" value="Add Discussion"></p>
+</form>
+</body>
+</html>

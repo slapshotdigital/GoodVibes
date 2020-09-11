@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAqTZ4VQlKXRpM-8zEV1fQKkA1CSFXFYwg",
+    authDomain: "good-vibes-tja.firebaseapp.com",
+    databaseURL: "https://good-vibes-tja.firebaseio.com",
+    projectId: "good-vibes-tja",
+    storageBucket: "good-vibes-tja.appspot.com",
+    messagingSenderId: "551003240739",
+    appId: "1:551003240739:web:41bb095d874fd31b013496",
+    measurementId: "G-616DHWDGNB"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+<!-- Create a password-based account -->
+<script>
+firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // ...
+  });
+</script>
+
+<!-- Sign in a user -->
+<script>
+firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // ...
+  });
+</script>
+
+<form action=firebase.auth().createUserWithEmailAndPassword()></form></form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br>
+  <label for="email">Email:</label>
+  <input type="text" id="email" name="email" value="email@email.com"></label><br>
+  <label for="password">Password:</label>
+  <input type="text" id="password" name="password" value="Enter a password with 8 or more characters"></label><br>
+  <input type="submit" value="Submit"> 
+</form> 
+
+</body>
+</html>

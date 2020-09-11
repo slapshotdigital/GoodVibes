@@ -1,0 +1,32 @@
+<DOCTYPE! html>
+<html>
+
+
+<head>
+  <link rel="stylesheet" href="chat.css"></link>
+  
+  
+  
+</head>
+<body>
+  <h1>Posts</h1>
+  
+  <div class="dropdown">
+      <button class="dropbtn"> Menu </button>
+      <div class="dropdown-content">
+        <a href="index.html">Home Page</a>
+        <a href="chat.html">Chatroom</a>
+        <a href="learning.html">Learn Something New</a>
+        <a href="social.html">Posts</a>
+        <a href="signin.html">Sign In</a>
+      </div>
+    </div>
+<form enctype="multipart/form-data" action="uploader.php" method="POST">
+<input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
+Choose a file to upload: <input name="uploadedfile" type="file" /><br />
+<input type="submit" value="Upload File" />
+</form>
+</body>
+
+
+</html>
